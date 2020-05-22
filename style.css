@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(0, 70, 128);
+    padding: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.header > h1 {
+    margin-left: 50px;
+}
+
+.sub-header {
+    margin: 10px;
+    margin-left: 80px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    margin: 15px 10px 15px 5px;
+}
+
+.flex-container > div.dog {
+    width: 425px;
+    margin: 5px;
+    line-height: 0;
+    background-color: white;
+    align-items: center;
+    position: relative;
+}
+
+div.dog > img {
+    margin: 5px;
+}
+
+.flex-container > div.link {
+    width: 425px;
+    height: 300px;
+}
+
+@keyframes link-text-hover {
+    from {
+        font-size: 45px;
+    }
+    to {
+        font-size: 0px;
+    }
+}
+
+@keyframes link-text-no-hover {
+    from {
+        font-size: 0px;
+    }
+    to {
+        font-size: 45px;
+    }
+}
+
+.link {
+    background-color: rgba(50, 115, 237, 0.6);
+    background-size: 100%;
+    width: 430px;
+    background-blend-mode: overlay;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 110px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.link:hover > span {
+    animation-name: link-text-hover;
+    animation-duration: 0.3s;
+    font-size: 0px;
+}
+
+.link > span {
+    animation-name: link-text-no-hover;
+    animation-duration: 0.3s;
+}
+
+.link#donate {
+    background-image: url("starter_files/images/donate.jpg");
+}
+
+.link#volunteer {
+    background-image: url("starter_files/images/volunteer.jpg");
+}
+
+.link#location {
+    background-image: url("starter_files/images/location.png");
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    text-align: center;
+    color: black;
+    background-color: rgb(152, 255, 255);
+    border: none;
+    margin: 2px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    font-weight: none;
+    transition: 0.15s;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
